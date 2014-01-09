@@ -1,7 +1,8 @@
 DOC=papersizes
 
 install : ${DOC}.7
-	cp ${DOC}.7 /usr/local/man/man7
+	mkdir -p /usr/local/man/man7
+	cp ${DOC}.7 /usr/local/man/man7/
 	chmod 644 /usr/local/man/man7/${DOC}.7
 
 all : install pdf 
